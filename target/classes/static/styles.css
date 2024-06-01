@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 2em auto;
+    max-width: 600px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.info-block {
+    background: url('https://via.placeholder.com/300') no-repeat center center/cover;
+    padding: 2em;
+    margin: 2em;
+    color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+#block0 {
+    position: absolute;
+    top: 0;
+    left: 1%;
+    width:90%;
+    height: 100px;
+    background: url('https://papik.pro/uploads/posts/2022-01/1641352533_1-papik-pro-p-vektornaya-elektrokardiogramma-risunok-1.jpg') no-repeat left center/cover ;
+    background-size: auto;
+    color: black;
+    text-align: right;
+    font-size: 30px;
+    font-family: "Times New Roman";
+    margin: 0;
+}
+#block10{
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    width:90%;
+    height: 100px;
+    background-size: auto;
+    color: black;
+    text-align: right;
+    font-size: 30px;
+    font-family: "Times New Roman";
+    margin: 0;
+
+}
+#block1 {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    display: none;
+}
+
+#block2 {
+    position: absolute;
+    top: 30%;
+    right: -1%;
+    display: none;
+}
+
+#block3 {
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    display: none;
+}
+
+#block4 {
+    position: absolute;
+    top: 70%;
+    right: -1%;
+    display: none;
+}
+
+#block5 {
+    position: absolute;
+    top: 50%;
+    right: -1%;
+    display: none;
+}
+
+#block6 {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    display: none;
+}
+
+#block7 {
+    position: absolute;
+    top: 70%;
+    right: 33%;
+    display: none;
+}

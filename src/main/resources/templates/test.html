@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестирование</title>
+  <link rel="stylesheet" th:href="styles.css">
+</head>
+<body>
+<div class="info-block" id="block0">
+
+  <p>У вас есть возможность<br> пройти тест по оценке<br> риска развития ССЗ</p>
+</div>
+<div class="container">
+  <button onclick="location.href='/'">На главную</button>
+  <form id="quizForm" action="/submit" method="post">
+    <div id="questionContainer">
+      <div th:each="question, iterStat : ${questions}">
+        <p th:text="${iterStat.count} + '. ' + ${question.questionText}"></p>
+        <div th:if="${question.options!= null}" th:each="option, optStat : ${question.options}">
+          <input type="radio" th:name="'answer' + ${iterStat.count}" th:value="${option}" required>
+          <span th:text="${option}"></span><br>
+        </div>
+        <div th:if="${question.options == null}">
+          <input type="text" th:name="'answer' + ${iterStat.count}">
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="submit">Отправить ответы</button>
+  </form>
+</div>
+</body>
+</html>

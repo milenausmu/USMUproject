@@ -1,0 +1,7 @@
+com\example\graduate\OpenAiResponse.class
+com\example\graduate\QuizService.class
+com\example\graduate\Question.class
+com\example\graduate\MainController.class
+com\example\graduate\OpenAiResponse$Choice.class
+com\example\graduate\OpenAiResponse$Choice$Message.class
+com\example\graduate\GraduateApplication.class

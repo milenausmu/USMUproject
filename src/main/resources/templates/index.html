@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" th:href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Оценка риска развития сердечно-сосудистых заболеваний</h1>
+    <p>Нажмите кнопку ниже, чтобы начать тестирование.</p>
+    <button id="startButton">Начать тест</button>
+</div>
+<div class="info-block" id="block0">
+    <p>У вас есть возможность<br> пройти тест по оценке<br> риска развития ССЗ</p>
+</div>
+<div class="info-block" id="block1">
+    <p>Информационный блок 1</p>
+</div>
+<div class="info-block" id="block2">
+    <p>Информационный блок 2</p>
+</div>
+<div class="info-block" id="block3">
+    <p>Информационный блок 3</p>
+</div>
+<div class="info-block" id="block4">
+    <p>Информационный блок 4</p>
+</div>
+<div class="info-block" id="block5">
+    <p>Информационный блок 5</p>
+</div>
+<div class="info-block" id="block6">
+    <p>Информационный блок 6</p>
+</div>
+<div class="info-block" id="block7">
+    <p>Информационный блок 7</p>
+</div>
+
+<script>
+    document.getElementById('startButton').addEventListener('click', function() {
+        window.location.href = '/test';
+    });
+</script>
+</body>
+</html>
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты</title>
+    <link rel="stylesheet" th:href="styles.css">
+</head>
+<body>
+<!--<div class="info-block" id="block0">-->
+<!--    <p>У вас есть возможность<br> пройти тест по оценке<br> риска развития ССЗ</p>-->
+<!--</div>-->
+<button onclick="location.href='/'">На главную</button>
+<div style="font-size: 30px">Рузльтата теста:</div>
+<br>
+<div style="font-size: 30px" th:text="${result}"></div>
+</body>
+</html>
